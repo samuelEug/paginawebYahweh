@@ -1,0 +1,1078 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif ;
+    background-color: #B7E4C7;
+}
+
+header.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1B4332;
+    padding: 10px 450px;
+    height: 150px;
+}
+
+header.menu .logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+header.menu .logo img {
+    max-height: 200%;
+    max-width: 200px;
+    background-color: white;
+    border-radius: 20px;
+    display: block;
+    object-fit: contain;
+}
+
+
+header.menu nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+
+header.menu nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+    font-size: 26px;
+}
+
+
+header.menu nav ul li a:hover,
+header.menu nav ul li a:focus,
+header.menu nav ul li a:active {
+    background-color: #0f261e; 
+    border-radius: 5px; 
+}
+
+.confira-planos {
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background: url('/assets/css/img/happy-parents-laughing-together-with-daughter.jpg') no-repeat center center;
+    background-size: cover; 
+    padding: 40px 20px;
+    padding-left: 60px;
+    height: 800px; 
+    color: white; 
+    text-align: center;
+    z-index: 1; 
+    overflow: hidden; 
+}
+
+.confira-planos::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+    z-index: -1; 
+}
+
+.confira-planos h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    z-index: 2; 
+    text-align: left;
+}   
+
+.confira-planos #plano-botao {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #11AD65;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 20px;
+    width: 20%;
+    z-index: 2;
+}
+
+.protecao {
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background: url('/assets/css/img/elderly-friends-playing-petanque.jpg') no-repeat center center;
+    background-size: cover; 
+    padding: 40px 20px;
+    margin-top: 50px;
+    padding-left: 50px;
+    height: 550px; 
+    color: white; 
+    text-align: center;
+    z-index: 1; 
+    overflow: hidden; 
+}
+
+.protecao::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+    z-index: -1; 
+}
+
+#duvida-h1 {
+    font-size: 40px;
+    color: #1C263F;
+}
+
+.container-nove {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 1000px;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+#solucoes-seguros {
+    color: #2b3c37;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cartao {
+    background-color: #1B4332;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
+    min-width: 150px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.cartao img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.cartao p {
+    color: #ffffff;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.cartao:hover {
+    transform: scale(1.05);
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #029BE1;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 20px;
+    width: 45%;
+}
+
+.contact-button:hover {
+    background-color: #1e362c;
+}
+
+.nosso-objetivo { 
+    background-color: #1B4332;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 45%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nosso-objetivo h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 2.7rem;
+}
+
+.nosso-objetivo h3 {
+    color: white;
+    font-size: 17px;
+
+}
+
+#sobre-botao {
+    display: inline-block;
+    padding: 20px 20px;
+    margin: 10px 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    background-color: #11AD65;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 20px;
+    width: 40%;
+}
+
+.accordion {
+    background-color: #0C302B;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 1000px;
+    margin: 20px auto; 
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+}
+
+.accordion-header {
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    text-align: left;
+    width: 100%;
+    display: block;
+    font-size: 22px;
+}
+
+.accordion-content {
+    color: white !important;
+    background: none !important;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease;
+}
+
+.accordion-content p {
+    color: white;
+    margin: 0;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ .accordion-content {
+    max-height: 200px;
+    padding: 15px;
+}
+
+    
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about h1 {
+    color: #204020;
+    font-size: 24px;
+}
+
+.about p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.features {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.feature-card {
+    background-color: #2D6A4F;
+    border-radius: 10px;
+    width: 15%;
+    height: 50% !important;
+    color: white;
+    text-align: center;
+}
+
+.feature-card img {
+    margin-top: 50px;
+    width: 40%;
+   
+}
+
+.feature-card h2 {
+    font-size: 26px;
+    line-height: 2;
+}
+
+.container-sete {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #0C302B;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.form-container {
+    flex: 1;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #ddd;
+    text-align: justify;
+    font-size: 20px;
+}
+
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    border: none;
+    background-color: #f8f8f8;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+
+#enviar {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background-color: #337456;    
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+    accent-color: #337456; /* Coloca cor no rádio */
+    position: relative; /* Garante que o input esteja visível */
+    z-index: 1; /* Traz os inputs para frente */
+}
+
+.radio-group { 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 10px;
+    color: #ddd; 
+}
+
+.radio-group input {
+    display: inline-block !important; /* Garante que não sejam ocultados */ 
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+
+button:hover {
+    background-color: #45a049;
+}
+
+.map-container {
+    flex: 1;
+    padding: 10px;
+    background-color: #2a3d34;
+    border-radius: 10px;
+}
+
+.map-container iframe {
+    width: 98%;
+    height: 100%;
+    border: 0;
+    border-radius: 10px;
+}
+
+.hero {
+    position: relative;
+    background: url('/assets/css/img/2149836832.jpg') center/cover no-repeat;
+    height: 80vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+}
+
+.hero-content {
+    position: relative; /* Necessário para garantir que o texto fique acima do pseudo-elemento */
+    z-index: 2; /* Garante que o texto fique acima do overlay */
+    text-align: left;
+    color: white;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin: 0 0 10px 0;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.faq-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.faq-content {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq-image {
+    max-width: 150px; 
+    margin-bottom: 10px;
+}
+
+.faq-content h2 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+    color: #1e405c;
+}
+
+.contact-button {
+    padding: 10px 25px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact-button:hover {
+    background-color: #1b5e20;
+}
+
+/* Estilo das abas */
+.tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; 
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.tab-label {
+    padding: 10px 20px;
+    background-color: #2e7d32;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: background-color 0.3s;
+    display: inline-block;
+    text-align: center;
+    width: 33.33%;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.tab-label:hover {
+    background-color: #1b5e20;
+}
+
+input[type="radio"]:checked + .tab-label {
+    background-color: #1b5e20;
+}
+
+.tab-content {
+    border: 1px solid #c4c4c4;
+    border-top: none;
+    background-color: #e8f5e9;
+    width: 33.3%;
+    padding: 15px;
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+    text-align: left;
+    
+}
+
+.tab-pane {
+    display: none;
+    font-size: 1.5rem;
+    color: black;
+}
+
+/* Exibe o conteúdo da aba selecionada */
+#tab-mission:checked ~ .tab-content #content-mission,
+#tab-values:checked ~ .tab-content #content-values,
+#tab-vision:checked ~ .tab-content #content-vision {
+    display: block;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e7f7e4; 
+}
+
+.cart {
+    background-color: #d8f3d8; 
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.icone-servico {
+    margin-bottom: 15px;
+}
+
+.simulate-button {
+    background-color: #4caf50; 
+    text-decoration: none;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.simulate-button:hover {
+    background-color: #45a049;
+}
+
+.accordion-servico {
+    width: 100%;
+}
+
+.accordion-servico summary {
+    background-color: #2e4930; 
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+    text-align: center;
+    transition: background-color 0.3s;
+    list-style: none;
+}
+
+.accordion-servico summary:hover {
+    background-color: #273a28;
+}
+
+.accordion-servico summary::marker {
+    display: none; /* Remove o marcador padrão do summary */
+}
+
+.accordion-conteudo {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f8f5;
+    display: none;
+}
+
+details[open] .accordion-conteudo {
+    display: block; /* Exibe o conteúdo quando o accordion é aberto */
+}
+
+.container-servico {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    background-color: #e5ffe5;
+    padding: 20px 30px; 
+    border-radius: 8px;
+    width: 100%;
+    height: 30vh;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    margin: 0 auto; 
+    gap: 500px; 
+    overflow: hidden;
+}
+
+.esquerda-div, .direita-div {
+    flex: 1;
+    min-width: 0;   
+    box-sizing: border-box; 
+}
+
+.esquerda-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    overflow: hidden;
+}
+
+.direita-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;   
+    flex: 1;
+    overflow: hidden;
+}
+
+#seguro-odonto {
+    margin-left: 40px;
+    color: #1C263F;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#seguro-h1 {
+    margin-left: 80px;
+    color: #1C263F;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#previdencia-h1 {
+    margin-left: 50px;
+    color: #1C263F;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.esquerda-div img {
+    width: 30%;
+    margin-bottom: 10px;
+}
+
+.simule-agora {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #52B788;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 20px;
+    width: 45%;
+}
+
+.previdencia-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #52B788;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 20px;
+    width: 45%;
+}
+
+.simule-agora:hover {
+    background-color: #2D6A4F;
+}
+
+.previdencia-btn:hover {
+    background-color: #2D6A4F;
+}
+
+.accordion-btn {
+    padding: 15px;
+    width: 55.9%;
+    border: none;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    cursor: pointer;
+    font-size: 22px;
+    background-color: #004d40;
+    color: #fff;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.accordion-btn:hover {
+    background-color: #00332e;
+}
+
+.panel {
+    display: none; 
+    overflow: hidden;
+    padding: 5px;
+    background-color: #004d40;
+    color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    max-width: 55.9%;
+    box-sizing: border-box;
+}
+
+.panel.show {
+    display: block;
+}
+
+.servico-odontologico {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    background-color: #95D5B2;
+    padding: 20px 30px; 
+    border-radius: 8px;
+    width: 100%;
+    height: 30vh;
+    margin: 0 auto; 
+    padding-top: 100px;
+    padding-bottom: 100px;  
+    gap: 500px; 
+    overflow: hidden;
+}
+
+.servico-saude {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #DDFFEA;
+    padding: 20px 30px;
+    border-radius: 8px;
+    width: 100%;
+    height: 30vh;
+    margin: 0 auto;
+    gap: 500px;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    overflow: hidden;
+}
+
+.servico-viagem {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #95D5B2;
+    padding: 20px 30px;
+    border-radius: 8px;
+    width: 100%;
+    height: 30vh;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    margin: 0 auto;
+    gap: 500px;
+    overflow: hidden;
+}
+
+.servico-previdencia {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #DDFFEA;
+    padding: 20px 30px;
+    border-radius: 8px;
+    width: 100%;
+    height: 30vh;
+    padding-top: 100px;
+    padding-bottom: 400px;
+    margin: 0 auto;
+    gap: 500px;
+    overflow: hidden;
+}
+
+.entrar-contato {
+    background-color: #95D5B2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 50px; 
+    padding-bottom: 50px;
+}
+
+.entrar-contato h1 {
+    color: #1C263F;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.entrar-contato ol {
+    font-weight: bold;
+    font-size: 26px;
+    margin-bottom: 40px;
+}
+
+.formulario-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #52B788;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 20px;
+    width: 20%;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1B4332;
+    padding: 20px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.rodape > div {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.rodape h3 {
+    margin-bottom: 10px;
+    font-size: 2em;
+    color: #fff;
+    font-weight: bold;
+    border-bottom: 1px solid #000;
+    display: inline-block;
+}
+
+.rodape p,
+.rodape a {
+    margin: 5px 0;
+    color: #fff;
+    text-decoration: none;
+}
+
+.rodape a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.rodape .icon {
+    margin-right: 5px;
+}
+
+/* Regras gerais para telas pequenas */
+@media (max-width: 768px) {
+    header.menu {
+        padding: 10px 20px;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 100% ;
+    }
+
+    header.menu .logo img {
+        max-width: 150px;
+    }
+
+    header.menu nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .confira-planos, .protecao {
+        padding: 20px;
+        height: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .confira-planos h1 {
+        font-size: 2.5rem;
+    }
+
+    #plano-botao, .contact-button, .simule-agora, .previdencia-btn, .formulario-btn {
+        width: 80%;
+        font-size: 18px;
+    }
+
+    .feature-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .accordion {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .tabs {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .tab-label {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .tab-content {
+        width: 100%;
+    }
+
+    .container {
+        height: auto;
+    }
+
+    .map-container {
+        width: 100%;
+        height: 300px;
+    }
+
+    .rodape {
+        flex-direction: column;
+        align-items: center;
+        width: 100% ;
+    }
+
+    .rodape > div {
+        margin: 10px 0;
+    }
+}
+
+/* Regras para telas médias */
+@media (max-width: 992px) {
+    header.menu {
+        padding: 10px 30px;
+    }
+
+    header.menu .logo img {
+        max-width: 180px;
+    }
+
+    .feature-card {
+        width: 25%;
+    }
+
+    .container-sete, .container-servico, .servico-odontologico, .servico-saude, .servico-viagem, .servico-previdencia {
+        padding: 20px;
+        height: auto;
+        gap: 20px;
+    }
+
+    .cartao {
+        min-width: 200px;
+    }
+
+    .hero-content {
+        padding: 40px;
+    }
+
+    .accordion-btn {
+        width: 100%;
+    }
+}
+
+/* Regras para telas muito grandes */
+@media (min-width: 1200px) {
+    .container-sete, .container-servico, .servico-odontologico, .servico-saude, .servico-viagem, .servico-previdencia {
+        padding: 30px;
+    }
+
+    .hero-content {
+        max-width: 1000px;
+    }
+
+    .feature-card {
+        width: 20%;
+    }
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="icon" href="/assets/css/img/Paleta Yahweh + Destaques e logo (1).png" type="image/png">
+    <title>Fale Conosco</title>
+</head>
+<body>
+    <header class="menu">
+        <div class="logo">
+            <img src="/assets/css/img/yahwehlogo-768x554-1-removebg-preview.png">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#contato">Fale Conosco</a></li>
+                <li><a href="/assets/pages/servicos.html">Serviços</a></li>
+                <li><a href="/assets/pages/sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contato"></section>
+    <div class="container-sete">
+        <div class="form-container">
+            <h1>Contato</h1>
+            <form action="#" method="post">
+                <label for="nome">Nome <span>*</span></label>
+                <input type="text" id="nome" name="nome" placeholder="Nome Completo" required>
+
+                <label for="email">E-mail <span>*</span></label>
+                <input type="email" id="email" name="email" placeholder="Seu e-mail de contato" required>
+
+                <label>Qual o Tipo de Seguro? <span>*</span></label>
+                <div class="radio-group">
+                    <label><input type="radio" name="seguro" value="vida" required> Seguro de Vida</label>
+                    <label><input type="radio" name="seguro" value="saude"> Seguro Saúde</label>
+                    <label><input type="radio" name="seguro" value="odonto"> Seguro Odonto</label>
+                    <label><input type="radio" name="seguro" value="viagem"> Seguro Viagem</label>
+                    <label><input type="radio" name="seguro" value="previdencia"> Previdência Privada</label>
+                </div>
+
+                <label for="data">Data de Nascimento <span>*</span></label>
+                <input type="date" id="data" name="data" required>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Fale mais sobre seu interesse com a gente!"></textarea>
+
+                <button type="submit" id="enviar" onclick="submitForm(event )">Enviar</button>
+            </form>
+        </div>
+
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.816471065466!2d-38.51764412481301!3d-3.7328724421442057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7bc5b5e78bfb2e9%3A0xd5f63ff7d4991f94!2sR.%20Jo%C3%A3o%20Carvalho%2C%20800%20-%20Aldeota%2C%20Fortaleza%20-%20CE%2C%2060140-140!5e0!3m2!1sen!2sbr!4v1686292361012!5m2!1sen!2sbr" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+
+    <footer class="rodape">
+        <div class="ajuda">
+            <h3>Atendimento</h3>
+            <p>comercial@Yahwehseguros.com.br</p>
+        </div>
+        <div class="redes-sociais">
+            <h3>Redes Sociais</h3>
+            <p>
+                <i class="fa-brands fa-whatsapp"></i>
+                <a href="">(85) 99407-2306</a>
+            </p>
+        </div>
+        <div class="fale-conosco">
+            <h3>Fale Conosco</h3>
+            <p><strong>Ligue Agora!</strong></p>
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                (85) 99407-2306
+            </p>
+            <p>Atendimento de 2ª a 6ª feira, das 8h às 18h</p>
+        </div>
+    </footer>
+
+    <script src="/assets/js/scripts.js"></script>
+</body>
+</html>

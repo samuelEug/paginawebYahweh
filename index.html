@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="/assets/css/img/Paleta Yahweh + Destaques e logo (1).png" type="image/png">
+    <title>Yahwehseguros</title>
+</head>
+<body>
+    <header class="menu">
+        <div class="logo">
+            <img src="/assets/css/img/yahwehlogo-768x554-1-removebg-preview.png">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="/assets/pages/contato.html">Fale Conosco</a></li>
+                <li><a href="/assets/pages/servicos.html">Serviços</a></li>
+                <li><a href="/assets/pages/sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home"></section>
+    <div class="confira-planos">
+        <h1>Mantenha seguro<br> quem você ama!</h1>
+        <a href="/assets/pages/servicos.html" id="plano-botao" target="_blank">Confira Nossos Planos</a>
+    </div>
+
+    <div class="container-nove">
+        <h1 id="solucoes-seguros">Soluções completas de seguros</h1>
+        <div class="cards">
+            <div class="cartao">
+                <img src="/assets/css/img/plano-de-saude_2-150x150-removebg-preview.png" alt="seguro-vida">
+                <p>Seguro de Vida</p>
+            </div>
+            <div class="cartao">
+                <img src="/assets/css/img/cuidado-dental_2-300x300-1-150x150-removebg-preview.png" alt="seguro-odonto">
+                <p>Seguro Odonto</p>
+            </div>
+            <div class="cartao">
+                <img src="/assets/css/img/escudo-300x300-1-150x150-removebg-preview.png" alt="seguro-saude">
+                <p>Seguro Saúde</p>
+            </div>
+            <div class="cartao">
+                <img src="/assets/css/img/bagagem-de-viagem-300x300-1-150x150-removebg-preview.png" alt="seguro-viagem">
+                <p>Seguro Viagem</p>
+            </div>
+            <div class="cartao">
+                <img src="/assets/css/img/cofrinho-150x150-removebg-preview.png" alt="previdencia-privada">
+                <p>Previdência Privada</p>
+            </div>
+        </div>
+        <a href="/assets/pages/contato.html" id="sobre-botao">Entre em Contato </a>
+    </div>
+
+    <div class="nosso-objetivo">
+        <h1>Nosso Objetivo</h1>
+        <h3>Nosso objetivo é proporcionar segurança<br>para sua família.</h3>
+        <a href="/assets/pages/sobre.html" id="sobre-botao" target="_blank">Sobre ></a>
+    </div>
+
+    <div class="protecao">
+        <h1>Garanta a proteção do seu bem mais valioso.</h1>
+    </div>
+
+    <h1 id="duvida-h1">Tire suas dúvidas </h1>
+    <div class="accordion">
+        <div class="accordion-item">
+            <input type="checkbox" id="item1">
+            <label for="item1" class="accordion-header">ˇ O que é um Seguro de Vida?</label>
+            <div class="accordion-content">
+                <p>É uma proteção econômica e financeira oferecida, caso ocorra o falecimento de um segurado, aos seus beneficiários indicados. Desse modo, com essa proteção, os segurados não ficam financeiramente desamparados neste momento tão difícil.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <input type="checkbox" id="item2">
+            <label for="item2" class="accordion-header"> ˇ Por que escolher a Yahweh?</label>
+            <div class="accordion-content">
+                <p>Somos uma equipe que busca proporcionar segurança para a sua família. Contamos com ampla experiência no mercado de seguros e buscamos auxiliar os nossos clientes antes, durante e depois da compra do seguro, sendo este, o nosso diferencial.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <input type="checkbox" id="item3"> 
+            <label for="item3" class="accordion-header">ˇ Se eu precisar de ajuda, com quem eu falo?</label>
+            <div class="accordion-content">
+                <p>Em caso de dúvida, basta enviar uma mensagem através do WhatsApp ou através do formulário na aba “contatos”, então estaremos prontos para te auxiliar.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <input type="checkbox" id="item4">
+            <label for="item4" class="accordion-header">ˇ Por que devo ter um Seguro de Vida?</label>
+            <div class="accordion-content">
+                <p>Porque não sabemos quando algo ocorrerá em nossas vidas. Mesmo com a saúde está em dia, acidentes e outras fatalidades podem comprometer a renda da família.
+
+                    Dessa forma, o seguro de vida é indispensável para preservar a estabilidade financeira da família em caso de ausência, doença grave ou acidente. Assim, asseguramos que, mesmo em ocasiões de perda, os beneficiários não tenham a renda afetada, tampouco esgotem suas reservas.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <input type="checkbox" id="item5">
+            <label for="item5" class="accordion-header">ˇ Qual o melhor Seguro de Vida para o meu momento atual?</label>
+            <div class="accordion-content">
+                <p>Cada família e pessoa é única, por isso, a nossa proposta é respeitar o momento de cada um, construindo a proteção da renda pouco a pouco. Desse modo, orientamos que o primeiro passo seja a garantia de indenizações por morte (qualquer causa).
+
+                    Depois, gradativamente, orientamos a complementação com outros tipos de seguro de vida, como por exemplo: por Incapacidade temporária para trabalhar, por invalidez,  por doença grave, entre outros.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const accordions = document.querySelectorAll('.accordion-item input[type="checkbox"]');
+        accordions.forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                if (this.checked) {
+                    accordions.forEach(otherCheckbox => {
+                        if (otherCheckbox !== this) {
+                            otherCheckbox.checked = false;
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+
+    <footer class="rodape">
+        <div class="ajuda">
+            <h3>Atendimento</h3>
+            <p>comercial@Yahwehseguros.com.br</p>
+        </div>
+        <div class="redes-sociais">
+            <h3>Redes Sociais</h3>
+            <p>
+                <i class="fa-brands fa-whatsapp"></i>
+                <a href="">(85) 99407-2306</a>
+            </p>
+        </div>
+        <div class="fale-conosco">
+            <h3>Fale Conosco</h3>
+            <p><strong>Ligue Agora!</strong></p>
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                (85) 99407-2306
+            </p>
+            <p>Atendimento de 2ª a 6ª feira, das 8h às 18h</p>
+        </div>
+    </footer>
+</body>
+</html>
